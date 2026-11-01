@@ -1,0 +1,17 @@
+{
+  "model_purpose": "Heart disease urgency triage \u2014 ER reception parallel screening",
+  "threshold_default": 0.5,
+  "threshold_triage_base": 0.131,
+  "threshold_triage_stacking": 0.0953,
+  "recommended_threshold": 0.0953,
+  "triage_logic": "Flag patient as urgent if probability >= recommended_threshold",
+  "features": [
+    "age",
+    "sex",
+    "chest_pain_type",
+    "exercise_angina",
+    "cp_severity",
+    "age_x_exang",
+    "age_risk_tier"
+  ]
+}
